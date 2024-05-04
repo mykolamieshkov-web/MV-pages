@@ -1,0 +1,184 @@
+.main {
+    @include responsive-block;
+    height: auto;
+    margin: 5px;
+    min-height: 100%;
+    section {
+        margin: 110px 0.2rem;
+        width: 100%;
+        height: auto;
+    }
+}
+.hero {
+
+&-text {
+    width: 100%;
+    height: auto;
+
+}
+&-text--header {
+    @include fluid-h1;
+    text-align: center;
+    text-wrap: balance;
+    margin-top: 2.2rem;
+
+}
+
+&-text-paragraph {
+    text-align: center;
+
+}
+&-image {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+&-image--item {
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    @include tablet {
+        width: 85%;
+    height: 355px;
+    }
+}
+&-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.center {
+    display: block;
+    margin: 3px auto;
+}
+}
+// -----------
+.services  {
+    @include responsive-block;
+    height: auto;
+    margin: 100px 0.5rem;
+    padding: 3px;
+
+&-title {
+    width: 100%;
+}
+&-title--item {
+    @include fluid-title;
+
+}
+&-content {
+    display: flex;
+    flex-flow: nowrap;
+    flex-basis: content;
+    width: 100%;
+    justify-content: space-evenly;
+    height: max-content;
+    align-items: center;
+@include tablet {
+    flex-flow:column-reverse;
+}
+}
+&-content--item {
+    padding: 15px;
+    width: 20%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: var(--white-color);
+    border-radius: 18px;
+    border: none;
+    @include tablet {
+        margin-bottom: 15px;
+        width: 350px;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+&-content--title {
+    text-wrap: balance;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    color: var(--black-accent);
+
+}
+&-content--list {
+    list-style-image: url("../img/icons/check-mark.png");
+   margin: 0.2rem;
+   padding: 0.3rem;
+    font-size: clamp(12px, 2vw, 14px);
+   text-align: left;
+   text-wrap: balance;
+   width: 100%;
+   height: auto;
+   color: var(--black-accent);
+   
+     &::marker {
+       margin-left: 0.1rem;
+     }
+    }
+
+
+&-button {
+    margin: 30px auto;
+    display: block;
+
+}
+}
+// -------
+.skills {
+@include responsive-block;
+height: auto;
+margin: 100px 15px;
+padding: 10px;
+
+&-content {
+display: flex;
+flex-direction: row;
+
+align-items: center;
+gap: 10px;
+width: 100%;
+@include mobile {
+    flex-direction: column-reverse;
+}
+}
+
+&-text {
+width: 100%;
+}
+&-text--item {
+    text-align: center;
+    text-wrap: balance;
+    filter: drop-shadow(8px 8px 4px var(--red-color));
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+&-text-paragraph {
+    width: 80%;
+    span {
+        color: var(--gold-color);
+    }
+}
+&-picture {
+    background-image: url("../img/main/skills/profile.png");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+    border: 2px solid var(--red-color);
+    margin: 30px;
+   
+}
+&-button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+}

@@ -1,0 +1,56 @@
+body {
+@include fluid-text;
+color: var(--white-color);
+background-color: var(--black-color);
+font-family: "Titillium Web", sans-serif;
+font-weight: 400;
+font-style: normal;
+scroll-behavior: smooth;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+// утилитарные классы: 
+.visually-hidden {
+    @include visually-hidden;
+}
+.button-main {
+    @include button;
+}
+.text-cell {
+    @include text-cell;
+}
+// ----------
+#loaderVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    @include tablet {
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+    }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    display: none; /* Initially hide the content */
+  }
+  
+  @keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+  }
+  
+  #myDiv {
+    text-align: center;
+  }
