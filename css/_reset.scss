@@ -19,14 +19,14 @@
  }
  
  a {
- text-decoration: none;
+   text-decoration: none;
  
+   &:focus,
+   &:active {
+     outline: none;
+   }
+ }
  
- }
- li {
-  list-style: inherit;
-  list-style-image: inherit;
- }
   footer  {
    display: block;
  }
@@ -53,6 +53,10 @@
    font-size: inherit;
    font-weight: 400;
  }
+ a {
+  color: inherit;
+  color: initial;
+ }
  
  p {
    margin-block: 0;
@@ -74,12 +78,7 @@
  }
  
  button {
-   cursor: pointer;
- 
-   &:focus-inner {
-     padding: 0;
-     border: 0;
-   }
+   all: initial;
  }
  
  /* Списки */
@@ -124,7 +123,7 @@
  }
  
  img {
-  
+   display: block;
    max-width: 100%;
  }
  
@@ -134,12 +133,10 @@
  button {
    font: inherit;
  }
- button {
-  all: initial;
- }
+ 
  html {
    height: 100%;
-  
+   scroll-behavior: smooth;
  }
  
  body {

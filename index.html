@@ -2,126 +2,184 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="description" content="Is your website frustrating users? I can help! I'm a developer with 5+ years of experience who builds user-friendly websites that convert. From responsive design to SEO optimization, I craft websites that work for you and your visitors. Contact Modern View Pages today for a free consultation!">
-<meta name="keywords" content="web development, user-friendly website, responsive design, SEO optimization, landing pages, e-commerce website, developer, Modern View Pages">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Modern View</title>
+   <title>Modern-Pages</title>
    <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<title>Front-End Development and Web Design Agency</title>
 </head>
-<body>    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   
+<body>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
    <div class="wrapper">
       <header class="header">
-         <a href="index.html" role="link"><div class="header--logo"></div><span class="visually-hidden">Go to the home page</span></a>
-         <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <a href="#">Blog</a>
+      <div class="header-content">
+         <div class="header-logo">
+           <a href="index.html"role="link" > <img class="logo header-logo--item" src="./img/icons/logo--vector.svg" alt="logo of a page" loading="lazy"></a>
+         </div>
+         <nav class="header-links">
+            <a href="#services" class="header-link--item">Services</a>
+            <a href="#benefits" class="header-link--item">Benefits</a>
+            <a href="#portfolio" class="header-link--item">Portfolio</a>
          </nav>
-            <a href="#contact" class="button-main header-button" role="button"> <span class="visually-hidden">Button to contact us</span>Stay in Touch</a>
-
+         <div class="header-btn">
+            <a href="#social" class="btn-cta" role="button">Get Started</a>
+         </div>
+      </div>
       </header>
       <main class="main">
-         <section id="about" data-aos="flip-up" data-aos-duration="5500">
-         <div class="hero">
-            <div class="hero-text">
-               <h1 class="hero-text--header">Modern View <br>Pages</h1>
-               <div class="text-cell center">
-               <p class="hero-text-paragraph">Your Page - our Responsibility</p>
-            </div>
-            </div>
-            <div class="hero-image">
-               <img src="./img/main/hero/screen.png" alt="desktop" class="hero-image--item" loading="lazy">
-            </div>
-            <a href="#contact" class="button-main hero-button" role="button"> <span class="visually-hidden">Button to contact us</span>Stay in Touch</a>
-         </div>
-      </section>
-      <section id="services" data-aos="zoom-in-down" data-aos-duration="75000">
-         <div class="services">
-            <div class="services-title">
-               <div class="services-title--item">
-                  <h3>From Static Sites to Dynamic Experiences</h3>
-                  
+         <section class="hero" data-aos="flip-up" data-aos-duration="6900">
+            <div class="hero-content">
+               <div class="hero-text">
+                 <div class="hero-title"> <h1 class="hero-title--item">Whatever you do,<br> 
+                     It is better with website</h1></div>
+                     <div class="hero-subtitle">
+                     <p class="hero-subtitle--item">Transform your Vision into Reality</p></div>
+                     <div class="hero-cta">
+                     <a href="#social" class="btn-cta center" role="button" >Get Started</a>
+                  </div>
+               </div>
+               <div class="hero-animation">
+                  <img src="./img/video-mockups/hero-section-mockup.webp"></img>
                </div>
             </div>
-            <div class="services-content">
-               <div class="services-content--item">
-                  <h2 class="services-content--title">Responsive Websites:</h2>
-                  <ul>
-                     <li class="services-content--list">Your website will gracefully adapt to any device</li>
-                  </ul>
+         </section>
+         <!--  -->
+         <section  class="services" data-aos="zoom-in" data-aos-duration="6700">
+            <div id="services" class="services-content">
+               <div class="box">
+                  <div class="box-title">
+                     <h3 class="box-title--item">
+                         A unique Design
+                     </h3>
+                  </div>
+                  <div class="box-icon">
+                     <img src="./img/icons/icons-box/box-1.svg" alt="services icon" class="box-icon--item" width="100%">
+                  </div>
+                  <div class="box-paragraph">
+                     <p class="box-paragraph--item">Our team will transform<br> your vision into a unique,<br> brand-new looking design</p>
+                  </div>
                </div>
-               <div class="services-content--item">
-                  <h2 class="services-content--title">Landing Pages:</h2>
-                  <ul>
-                     <li class="services-content--list">We shall craft landing pages</li>
-                  </ul>
-               </div>
-               <div class="services-content--item">
-                  <h2 class="services-content--title">Business Cards:</h2>
-                  <ul>
-                     <li class="services-content--list">We shall build  a digital business card<li>
-                  </ul>
-               </div>
-               <div class="services-content--item">
-                  <h2 class="services-content--title">E-Commerce Menus: </h2>
-                  
-                     <li class="services-content--list">Our user-friendly e-commerce menus</li>
-                  
-               </div>
-            </div>
-            <a href="#contact" class="button-main services-button" role="button"> <span class="visually-hidden">Button to contact us</span>Stay in Touch</a>
-         </div>
-      </section>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <section id="skills" data-aos="flip-up" data-aos-duration="7500">
-         <div class="skills">
-            <div class="skills-content">
-               <div class="skills-text">
-                  <h3 class="skills-text--item">
-                     Skills & Experience
+               <div class="box">
+                     <div class="box-title">
+                  <h3 class="box-title--item">
+                     Code your Page
                   </h3>
-                  <p class="skills-text-paragraph">
-   <span>Technical Expertise You Can Trust:</span> Over 3 years of experience with crafting pages.<br><br><br>
-	<span>A Team Player at Heart:</span> Collaboration is key. I'll work seamlessly with you and your team to bring your vision to life.
-
+               </div>
+               <div class="box-icon">
+                  <img src="./img/icons/icons-box/box-2.svg" alt="services icon" class="box-icon--item" width="100%">
+               </div>
+               <div class="box-paragraph">
+                  <p class="box-paragraph--item">More than 5 years of<br> transforming design into working,<br> responsive web-pages</p>
+               </div>
+               </div>
+               <div class="box">  
+                   <div class="box-title">
+                  <h3 class="box-title--item">Hosting a Page</h3>
+               </div>
+               <div class="box-icon">
+                  <img src="./img/icons/icons-box/box-3.svg" alt="services icon" class="box-icon--item" width="100%">
+               </div>
+               <div class="box-paragraph">
+                  <p class="box-paragraph--item">Giving you a test period<br> before the payment,<br>enjoy your link </p>
+               </div>
+            </div>
+            </div>
+            <a style="margin-top: 12px;" href="#social" class="btn-cta center" role="button">Get Started</a>
+         </section>
+         <section id="benefits" class="benefits"  data-aos="zoom-out" data-aos-duration="6700">
+            <div class="benefits-content">
+               <div class="benefits-text">
+                  <h3 class="benefits-text--title">Benefits of choosing<br> Us</h3>
+                  <p class="benefits-text--subtitle">
+                     Get the best Experience
                   </p>
                </div>
-               <div class="skills-picture"></div>
+               <div class="benefits-picture">
+                  <img src="./img/benefits/benefits-picture--1.png" alt="picture" class="benefits-picture--item">
+               </div>
+               <div class="benefits-text">
+                  <h3 class="benefits-text--title">More than 5 years in <br>Industry</h3>
+                 
+               </div>
+               <div class="benefits-picture">
+                  <img src="./img/benefits/benefits-pictture--2.png" alt="picture" class="benefits-picture--item">
+               </div>
+               <div class="benefits-text">
+                  <h3 class="benefits-text--item">Build your page <br> with Us </h3>
+               </div>
+               <a style="margin-top: 12px;" href="#social" class="btn-cta center" role="button">Get Started</a>
+            </div>
+         </section>
+        <section id="portfolio" data-aos="flip-up"data-aos-duration="6400" class="portfolio">
+         <div class="portfolio-row-content">
+            <div class="portfolio-box">
+               <div class="portfolio-title">
+                  <h3 class="portfolio-title--item">LiveBlocks 2.0</h3>
+               </div>
+               <a href="https://liveblocks.io" target="_blank" role="link"><div class="portfolio-animation">
+                  <img class="portfolio-animation--item" src="./img/video-mockups/hero-section-mockup.webp"></img>
+               </div></a>
+               <div class="portfolio-paragraph">
+                  <p class="portfolio-paragraph--item">We have been working on a page<br> for perfect<br> collaboration solution </p>
+               </div>
+            </div>
+            <div class="portfolio-box">
+               <div class="portfolio-title">
+                  <h3 class="portfolio-title--item">Relvise</h3>
+               </div>
+              <a  href="https://mykolamieshkov-web.github.io/Relvise/" role="link" target="_blank"> <div class="portfolio-animation">
+                  <img class="portfolio-animation--item" src="./img/video-mockups/portfolio-landing.webp"></img>
+               </div></a>
+               <div class="portfolio-paragraph">
+                  <p class="portfolio-paragraph--item">Example of a page,<br> that works as your<br> personal business-card</p>
+               </div>
             </div>
          </div>
-
-         <a href="#contact" class="button-main skills-button" role="button"> <span class="visually-hidden">Button to contact us</span>Stay in Touch</a>
-      </section>
+         <div class="portfolio-column-content">
+            <div class="portfolio-box">
+               <div class="portfolio-title">
+                  <h3 class="portfolio-title--item">TRY-global</h3>
+               </div>
+              <a href="https://mykolamieshkov-web.github.io/TRY-global/" role="link" target="_blank"> <div class="portfolio-animation">
+                  <img class="portfolio-animation--item" src="./img/video-mockups/portfolio-yoga.webp"></img>
+               </div></a>
+               <div class="portfolio-paragraph">
+                  <p class="portfolio-paragraph--item">Our team gave a brand-new vision<br> with redesign for<br> Trauma Recovery Yoga brand</p>
+               </div>
+            </div>
+         </div>
+         <a href="#social" class="btn-cta center" role="button">Get Started</a>
+        </section>
+        <section id="social" class="social">
+         <div class="social-content">
+            <a href="https://wa.me/+380681032836" role="link" target="_blank"><div class="social-content-item">
+               <div class="social-picture">
+                  <img src="./img/icons/social/whats-up.svg" alt="whatsup-link" class="social-picture--item" width="100px" height="100px" loading="lazy">
+               </div>
+            </div></a>
+            <a href="https://t.me/mykolamieshkov" role="link" target="_blank"><div class="social-content-item">
+               <div class="social-picture">
+                  <img src="./img/icons/social/telegram.svg" alt="whatsup-link" class="social-picture--item" width="100px" height="100px" loading="lazy">
+               </div>
+            </div></a>
+            <a href="https://www.instagram.com/m.mieshkov/" role="link" target="_blank"><div class="social-content-item">
+               <div class="social-picture">
+                  <img src="./img/icons/social/instagram.svg" alt="whatsup-link" class="social-picture--item" width="100px" height="100px" loading="lazy">
+               </div>
+            </div></a>
+         </div>
+        </section>
       </main>
-      <footer id="contact" class="footer">
-         <div class="links"  data-aos="zoom-in" data-aos-duration="7000">
-            <a id="telegram" href="https://t.me/mykolamieshkov" target="_blank" class="footer-btn" title="telegram-link"><span class="visually-hidden">Open telegram link</span></a>
-            <a id="instagram" href="https://www.instagram.com/m.mieshkov/" target="_blank" title="instagram-link" class="footer-btn"><span class="visually-hidden">Open telegram link</span></a>
-            <a id="whats-up" href="https://wa.me/+380681032836" target="_blank"  title="whats-up link" class="footer-btn"><span class="visually-hidden">Open telegram link</span></a>
-         </div>
-         <br>
-         <br>
-         <br>
-         <br>
-         <div class="footer-copyright">
-            <p>©Modern View Pages</p>
-         </div>
+      <footer class="footer">
+         <p>©Modern-Pages</p>
+         <p>2024</p>
       </footer>
    </div>
 </body>
